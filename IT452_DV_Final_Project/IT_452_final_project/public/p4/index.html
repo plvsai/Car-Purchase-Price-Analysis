@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="card">
+        <h1><a href="../index.html">Car Purchase Price Analysis</a></h1>
+        <div>
+          <div>
+            <label for="priceRangeInput">Price Range: </label>
+            <output for="priceRangeInput" id="priceRangeOutput"></output>
+          </div>
+          <div id="priceRangeInput"></div>
+        </div>
+        <div>
+          <label for="variableSelect">Variable: </label>
+          <select id="variableSelect"></select>
+        </div>
+        <div>Use mousewheel to zoom and drag to pan.</div>
+        <h2> Price vs <span id="priceVsVariableTitle"></span> </h2>
+        <div id="priceVsVariableChart"></div>
+      </div>
+    </div>
+    <div id="tooltip" class="tooltip"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./js/double-range-input.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/scatter-chart.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
